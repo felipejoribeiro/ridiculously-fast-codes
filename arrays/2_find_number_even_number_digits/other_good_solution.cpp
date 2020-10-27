@@ -1,12 +1,15 @@
+#include<iostream>
+#include<vector>
+
 class Solution {
 public:    
-    int findNumbers(vector<int>& nums) {
+    int findNumbers(std::vector<int>& nums) {
         // disable synchronization between c and c++ standard streams
-        ios_base :: sync_with_stdio(false);
+        std::ios_base :: sync_with_stdio(false);
 	    // just stop automatic flush after cout
-        cin.tie(0);
+        std::cin.tie(0);
 	    // just stop automatic flush after before cin
-        cout.tie(0);
+        std::cout.tie(0);
         
         int count = 0;
         for (const int &n : nums) {
